@@ -6,16 +6,41 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className="logo2">
-          <img src="../../src/assets/img/logo2"
+        function logo2() {
+          return(
+            <div>
+              <img src={logo2} alt="Logo no rodapé"/>
+            </div>
+          );
+        }
+
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil obcaecati laborum laboriosam. Repellat, 
           ut dicta perferendis maxime nisi quasi adipisci quam iste blanditiis eveniet perspiciatis excepturi officia modi deleniti beatae.</p>
-        <div className="redesSociais">
-          <img src="../src/assets/img/logo/facebook.png" alt="" />
-          <img src="../src/assets/img/logo/instagram.png" alt="" />
-          <img src="../src/assets/img/logo/twiter.png" alt="" />
-        </div>
+          
+        function face() {
+          return(
+            <div>
+              <img src={face} alt="Logo facebook"/>
+            </div>
+          );
+        }
+        function insta() {
+          return(
+            <div>
+              <img src={insta} alt="Logo facebook"/>
+            </div>
+          );
+        }
+        function twiter() {
+          return(
+            <div>
+              <img src={twiter} alt="Logo twiter"/>
+            </div>
+          );
+        }
+        git 
+
         <div className="divisao1">
           <p>Informação</p>
           <p>Sobre Drip Store</p>
