@@ -1,20 +1,19 @@
 import "./App.css";
-import Body from "./components/body/Body";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import MainBanner from "./components/main-banner/MainBanner";
-import Menu from "./components/menu/Menu";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Layout from "../src/Views/Layout/Layout";
+import products from "./Views/Products/Productsjsx";
+import Home from "../src/Views/Home/Home";
 
 function App() {
   return (
     <>
-      <main>
-        <Header />
-        <Menu />
-        <MainBanner />
-        <Body />
-        <Footer />
-      </main>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route path = "/products" element = {<Home/>}/>
+          Route path="products" element
+          index element={<Home/>}/>
+        </Route>
+      </Routes>
     </>
   );
 }
