@@ -1,20 +1,21 @@
 import "./App.css";
-import Body from "./components/body/Body";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import MainBanner from "./components/main-banner/MainBanner";
-import Menu from "./components/menu/Menu";
+import { BrowserRouter, Route, Routes } from "react-router";
+
+import Layout from "./views/layout/Layout";
+import Products from "./views/products/Products";
+import Home from "./views/home/Home";
 
 function App() {
   return (
     <>
-      <main>
-        <Header />
-        <Menu />
-        <MainBanner />
-        <Body />
-        <Footer />
-      </main>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/products" element={<Products />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
