@@ -6,6 +6,7 @@ footer{
     background-color: black;
     color: white;
     padding: 150px 0 0 150px;
+    cursor: pointer;
 }
 
 .logo2{
@@ -15,12 +16,23 @@ footer{
 .logo2Image{
     color: white;
 }
-
-.compact-text {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1; /* Espaçamento reduzido */
-    margin: 0;
-    padding: 0;
-    width: 100px;
+.Lorem{
+    width: 300px;
+}
+.face, .insta, .twitter{
+    display: inline-block; /* Faz as imagens ficarem lado a lado */
+    margin-right: 2px; /* Espaçamento entre as imagens */
+    width: 50px; /* Ajuste o tamanho */
+    height: auto; /* Mantém a proporção */ 
+    padding: 40px.0.0.0;
+}
+.coluna-1, .coluna-2, .coluna-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: red;
+}
+.copyright{
+    text-align: center;
 }
