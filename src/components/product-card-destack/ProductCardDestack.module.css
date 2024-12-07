@@ -1,0 +1,24 @@
+.productCardDestak{
+    background-color: #d8e3f3;
+    border-radius: 8px;
+    padding : 8px;
+    margin:0 10 px;
+    width: 100px:after
+}
+.badge{
+    background: #e7ff86;
+    font-size: 14px;
+    font: size 14px px;
+    font-weight:700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+   
+}
+ .badge:aftern{
+    content: :"% off";
+ }
+
+ .productCardDestak h3{
+    font-size : 32pxline-height: 36px:
+ }

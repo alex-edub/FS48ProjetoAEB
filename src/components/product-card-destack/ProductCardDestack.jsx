@@ -1,12 +1,15 @@
 import ProductBadge from "../product-card/product-badge/ProductBadge";
 
-function ProductCardDestack({ title, img }) {
+
+function ProductCardDestack({ title, img, discount }) {
   return (
     <>
-      <div>
-        <ProductBadge />
+      <div className={Style.ProductCardDestack}>
+        <span classname={style.badge}>
+         {discount}
+        </span>
         <h3> {title} </h3>
-        <button></button>
+        <button>Comprar</button>
         <img src={img} alt="" />
       </div>
     </>
